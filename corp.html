@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="corp.css">
+
+</head>
+<body>
+  <nav>
+      <label class="logo">E-CORPS</label>
+      <ul>  
+        <li><a href="#">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Crime-static">Crime-Statics</a></li>
+       <li><a href="#Services">Services</a></li> 
+        <li><a href="#contact-us">contact-us</a></li>
+        </ul>
+  </nav>
+  <h1>Welcome to e-corpwebsite!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, facilis.
+    <a href="#form"><button class="bttn" ><b>login/signup</b></button></a>
+    </p>
+  
+  <section class ="home" id="home">
+      
+    
+      <div class="boxes">
+          <div class="tiles" >
+            <a href="#Makecomplaint" >
+                    <h3>MAKE NEW COMPLAINT</h3>
+          </a>
+          </div>
+        
+        
+          <div class="tiles">
+              <h3>VIEW STATUS</h3>
+
+          </div>
+          <div class="tiles">
+              <h3>VIEW FIR</h3>
+
+          </div>
+      </div>
+  </section>  
+  <!--COMPLAINT TILES-->
+  <section class="Makecomplaint" id="Makecomplaint">
+      <h2>CHOOSE THE TYPE OF COMPLAINT</h2>
+     
+      <div class="complaint">
+        
+      <div  class="type">
+        <a href="#form">
+        <img src="img/img7.jpg" alt="photo" width=100px>
+          <div class="text">
+              <h4>MISSING</h4>
+          </div>
+          </a>
+          </div>
+          <div  class="type">
+          <a href="#form">
+            <img src="img/img7.jpg" alt="photo" width=100px>
+              <div class="text">
+                  <h4>MISSING</h4>
+              </div>
+              </a>
+              </div>
+              <div  class="type">
+              <a href="#form">
+                <img src="img/img7.jpg" alt="photo" width=100px>
+                  <div class="text">
+                      <h4>MISSING</h4>
+                  </div>
+                  </a>
+                  </div>
+                  <div  class="type">
+                    <a href="corplogin.html">
+                      <img src="img/img7.jpg" alt="photo" width=100px>
+                        <div class="text">
+                            <h4>MISSING</h4>
+                        </div>
+                        </a>
+                        </div>
+                        <div  class="type">
+                          <a href="#form">
+                            <img src="img/img7.jpg" alt="photo" width=100px>
+                              <div class="text">
+                                  <h4>MISSING</h4>
+                              </div>
+                              </a>
+                              </div>
+                              <div  class="type">
+                                <a href="#form">
+                                  <img src="img/img7.jpg" alt="photo" width=100px>
+                                    <div class="text">
+                                        <h4>MISSING</h4>
+                                    </div>
+                                    </a>
+                                    </div>
+      </div>
+    </div>
+  </section>
+  <section class="About" id="About">
+    <div class="abt">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,sequi. Eum totam ducimus, minima nobis iure amet deserunt possimus ipsa ullam temporibus sunt reiciendis veniam nulla, accusantium nihil culpa commodi placeat cupiditate!</p>
+    
+</div>
+
+  </section>
+  <section class="Crime-static" id="Crime-static">
+    <div class="srv">
+    <h2>Crime-static</h2>
+    <div class="photo">
+    <img src="img/Screenshot (232).png" alt="photo" width=275px>
+    <a href ="https://en.wikipedia.org/wiki/List_of_states_and_union_territories_of_India_by_crime_rate">
+   
+    <h4>show complete static</h4>
+  </div>
+    
+</div>
+
+</a>
+  </section>
+
+  <!--
+  <section class="services" id="Services">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias debitis id vitae provident in quibusdam velit, quo consequatur at quos dignissimos culpa necessitatibus repudiandae? Similique ipsum praesentium adipisci! Exercitationem deserunt mollitia dolorum.</p>
+  </section>
+-->
+  
+  <section class="form" id=form>
+
+    <div class="loginsign">
+      <div class="box">
+          <div class="inner-box" id="box">
+              <div class="box-front">
+                  <h4>LOGIN</h4>
+                  <form>
+                      <input type="email"  class="input"  placeholder="email-id" required>
+                      <input type="number"  class="input" placeholder="adhar-no." required >
+                      <input type="password"  class="input"  placeholder="password" required>
+                      <button type="submit" class="sub_btn">Login</button>
+                      <input type="checkbox"><span>Remember Me</span>
+                  </form>
+                  <button type="button" class="btn" onclick="openREGISTER()">create new account</button>
+                  <a href="">Forgot password</a>
+              </div>    
+              <div class="box-back">
+                  <h4>REGISTER</h4>
+                  <form>
+                      <input type="text"  class="input"  placeholder="name" required>
+                      <input type="email"  class="input"  placeholder="email-id" required>
+                      <input type="number"  class="input" placeholder="adhar-no." required >
+                      <input type="number"  class="input" placeholder="Pan-no." required >
+                      <input type="password"  class="input"  placeholder="password" required>
+                      <button type="submit" class="sub_btn">Register</button>
+                      <input type="checkbox"><span>Remember Me</span>
+                  </form>
+                  <button type="button" class="btn" onclick="openLOGIN()">already have an account</button>
+                 
+              </div>    
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <script>
+      var box=document.getElementById("box");
+
+      function openREGISTER(){
+          box.style.transform="rotateY(-180deg)";
+
+      }
+      function openLOGIN(){
+          box.style.transform="rotateY(0deg)";
+          
+      }
+
+  </script>
+  </section>
+
+
+  <section class="contact-us" id="contact-us">
+    <div class="cont">
+    <h2>Contact-Us</h2>
+    <p><b>Mobile No. </b>:+739329xxxx<br><b>E-mail</b>:abcdefg@gmail.com<br>Adress</b>:Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+</div>
+  </section>
+ 
+</body>
+</html>
